@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Captcha</title>
+</head>
+<body>
+    <section>
+        <form method="GET">
+
+            <h3>Entre em contato</h3>
+
+            <input placeholder="Nome" class="text-input" type="text">
+            <input placeholder="Email" class="text-input" type="email">
+            <textarea placeholder="Digite sua mensagem..." class="text-msg" name="mensagem" id="text-mensagem" cols="30" rows="5"></textarea>
+
+            <input type="submit" class="enviar-input" value="Enviar">
+
+            <div class="challenge">
+                <span>Resolva o desafio para enviar a mensagem:</span>
+
+                <div class="numbers">
+                    <p>
+                        <span class="num1"></span>
+                        <span class="operator">+</span>
+                        <span class="num2"></span>
+                        <span class="equals"> =&nbsp;</span>
+                    </p>
+                    <input type="number" name="resposta" id="userResp">
+                </div>
+
+                <div class="area-btns">
+                    <div onclick="getChanllenge()" class="btn-challenge">Ver desafio</div>
+                    <div onclick="checkAnswer()" class="btn-responder">Enviar</div>
+                </div>
+
+            </div>
+
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
