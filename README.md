@@ -1,2 +1,2 @@
 # captcha_js
-Captcha simples para formulário como chegagem no front feito em JS
+Captcha simples para formulário como checagem no front feito em JS
